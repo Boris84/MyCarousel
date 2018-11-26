@@ -1,45 +1,67 @@
 <!DOCTYPE html> <html lang="en">
 <head>
-<title>
-  MyCarousel
-</title>
+<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+<title>My Carousel</title>
 </head>
-
-<header>
-  My Carousel
-</header>
 <body> 
 
-<!--carousel container-->
-<div class="container">
+<!-- carousel container -->
+<div class="carousel-container">
 
-<!--images-->
-<div class="mySlider fade">
-<div class="numberText">1 / 3</div>
-<img src="">
+<!-- slide images -->
+<div class="image fader">
+<div class="slide">1 / 3</div>
+<img src="resources/images/html.png"/>
 </div>
 
-<div class="mySlider fade">
-<div class="numberText">2 / 3</div>
-<img src="">
+
+<div class="image fader">
+<div class="slide">2 / 3</div>
+<img src="resources/images/css.png"/>
 </div>
 
-<div class="mySlider fade">
-<div class="numberText">3 / 3</div>
-<img src="">
+
+<div class="image fader">
+<div class="slide">3 / 3</div>
+<img src="resources/images/javascript.jpg"/>
 </div>
 
-<!-- Next and Previous buttons -->
+<!-- next and prev pointers -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>;
+<a class="next" onclick="plusSlides(1)">&#10095;</a>;
+</div>
 
 
+<!-- javaScirpt -->
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
 
+// next / prev controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+// image function call 
+function currentSlide(n) {
+  showSlides(slideIndex = n);	
+}
 
-
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("image");
+   if (n > slides.length) {slideIndex = 1} 
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+    slides[slideIndex-1].style.display = "block"; 
+}
+</script>
 
 
 
 </body>
-<footer></footer>
 </html>

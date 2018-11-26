@@ -1,0 +1,70 @@
+*, *:before, *:after {
+  box-sizing:border-box;
+}
+
+body {
+  background: #000;
+}
+
+.carousel-container {
+  max-width: 800px;
+  position: relative;
+  border: solid white 5px;
+  margin: auto;
+  top: 90px;
+}
+
+.carousel-container img {
+  width: 100%;
+}
+
+.image {
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 40%;
+  width: auto;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.6s ease;
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background: #000;
+}
+
+.slide {
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.fader {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.2s;
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 2}
+}
