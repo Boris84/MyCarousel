@@ -7,19 +7,22 @@ body {
 }
 
 .carousel-container {
-  max-width: 800px;
+  max-width: 70%;
+  height: 390px;
   position: relative;
-  border: solid white 5px;
   margin: auto;
-  top: 90px;
-}
-
-.carousel-container img {
-  width: 100%;
+  top: 125px;
 }
 
 .image {
-  display: none;
+  height: 384px;
+  max-height: 100%;
+ }
+
+.carousel-container img {
+  width: 100%;
+  max-height: 100%;
+  border: solid white 5px;
 }
 
 .prev, .next {
@@ -67,4 +70,14 @@ body {
 @keyframes fade {
   from {opacity: .5} 
   to {opacity: 2}
+}
+
+
+#demo {
+   top: 87%;
+   left: 3%;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   background-color: black;
 }
