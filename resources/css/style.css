@@ -27,7 +27,7 @@ body {
 
 .prev, .next {
   position: absolute;
-  top: 40%;
+  margin-top: -230px;
   width: auto;
   color: #ffffff;
   font-size: 30px;
@@ -80,4 +80,70 @@ body {
    width: 30px;
    height: 30px;
    background-color: black;
+
+}
+
+
+
+/* media queries */
+ /* tablet 940px - 870px */ 
+ @media only screen and (min-width: 870px) and (max-width: 940px) {
+   .prev, .next {
+   	    margin-top: -245px;   
+   }
+ }
+ @media only screen and (min-width: 790px) and (max-width: 870px) {
+   .prev, .next {
+   	    margin-top: -260px; 
+   }
+ }
+@media only screen and (min-width: 720px) and (max-width: 790px) {
+	.prev, .next {
+	    margin-top: -273px;
+	}
+}
+
+/* tablet 720px - px */ 
+@media only screen and (min-width: 660px) and (max-width: 720px) {
+	.prev, .next {
+		margin-top: -283px;
+	}
+}
+@media only screen and (min-width: 610px) and (max-width: 660px) {
+	.prev, .next {
+		margin-top: -293px;
+	}
+}
+
+/* tablet / ipad */
+@media only screen and (min-width: 560px) and (max-width: 610px) {
+	.prev, .next {
+		margin-top: -303px;
+	}
+}
+@media only screen and (min-width: 500px) and (max-width: 560px) {
+	.prev, .next {
+		margin-top: -313px;
+	}
+}
+/* smartphone */
+@media only screen and (min-width: 460px) and (max-width: 500px) {
+	.prev, .next {
+		margin-top: -323px;
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 460px) {
+	.prev, .next {
+		margin-top: -333px;
+	}
+}
+@media only screen and (min-width: 340px) and (max-width: 400px) {
+    .prev, .next {
+    	margin-top: -343px;
+    }
+}
+@media only screen and (min-width: 290px) and (max-width: 340px){
+	.prev, .next {
+		margin-top: -353px;
+	}
 }
