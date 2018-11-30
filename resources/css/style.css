@@ -35,7 +35,6 @@ body {
   cursor: pointer;
   transition: 0.6s ease;
   padding: 16px;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
@@ -152,39 +151,41 @@ body {
 /* #demo  - 980px */
 @media only screen and (min-width: 950px) and (max-width: 980px) {
      #demo {
-   	    top: 84%;
-        left: 4%;
+   	   top: 84%;
+       left: 4%;
      }
 }
 @media only screen and (min-width: 920px) and (max-width: 950px) {
      #demo {
-   	    top: 80%;
-        left: 4%;
+   	   top: 80%;
+       left: 4%;
      }
 }
  @media only screen and (min-width: 870px) and (max-width: 920px) {
      #demo {
-      	top: 76%;
-        left: 5%;
-        width: 27px;
-        height: 27px;
+       top: 76%;
+       left: 5%;
+       width: 27px;
+       height: 27px;
      }
-
  }
   @media only screen and (min-width: 840px) and (max-width: 870px) {
      #demo {
-        top: 72%;
-        left: 5%;
-        width: 27px;
-        height: 27px;
+       top: 72%;
+       left: 5%;
+       width: 27px;
+       height: 27px;
      }
  }
  @media only screen and (min-width: 800px) and (max-width: 840px) {
      #demo {
-        top: 68%;
-        left: 5%;
-        width: 27px;
-        height: 27px;
+       top: 68%;
+       left: 5%;
+       width: 27px;
+       height: 27px;
+     }
+     .slide {
+       font-size: 18px;
      }
  }
  @media only screen and (min-width: 760px) and (max-width: 800px) {
@@ -194,8 +195,17 @@ body {
         width: 26px;
         height: 26px;
      }
+     .slide {
+        font-size: 18px;
+     }
  }
   @media only screen and (min-width: 720px) and (max-width: 760px) {
+     .prev, .next {
+        font-size: 25px;
+     }
+     .slide {
+        font-size: 18px;
+     }
      #demo {
         top: 62%;
         left: 5%;
@@ -204,6 +214,12 @@ body {
      }
  }
  @media only screen and (min-width: 690px) and (max-width: 720px) {
+     .prev, .next {
+        font-size: 25px;
+     }
+     .slide {
+        font-size: 18px;
+     }
      #demo {
         top: 60%;
         left: 5%;
@@ -212,10 +228,128 @@ body {
      }
  }
  @media only screen and (min-width: 640px) and (max-width: 690px) {
+     .prev, .next {
+        font-size: 22px;
+     }
+     .slide {
+        font-size: 16px;
+     }
      #demo {
-        top: 57%;
+        top: 54%;
         left: 6%;
         width: 23px;
         height: 23px;
      }
- }
+}
+ @media only screen and (min-width: 590px) and (max-width: 640px) {
+     .prev, .next {
+        font-size: 20px;
+     }
+     .slide {
+        font-size: 16px;
+     }
+     #demo {
+        top: 45%;
+        left: 6%;
+        width: 22px;
+        height: 22px;
+     }
+}
+@media only screen and (min-width: 580px) and (max-width: 590px) {
+     .prev, .next {
+        font-size: 20px;
+     }
+     .slide {
+        font-size: 14px;
+     }
+     #demo {
+        top: 45%;
+        left: 6%;
+        width: 20px;
+        height: 20px;
+     }
+}
+@media only screen and (min-width: 560px) and (max-width: 580px) {
+     .prev, .next {
+        font-size: 20px;
+     }
+     .slide {
+        font-size: 14px;
+     }
+     #demo {
+        top: 45%;
+        left: 6%;
+        width: 20px;
+        height: 20px;
+     }
+}
+@media only screen and (min-width: 500px) and (max-width: 560px) {
+     .prev, .next {
+        font-size: 19px;
+     }
+     .slide {
+        font-size: 13px;
+     }
+     #demo {
+        top: 40%;
+        left: 6%;
+        width: 20px;
+        height: 20px;
+     }
+}
+@media only screen and (min-width: 460px) and (max-width: 500px) {
+     .prev, .next {
+        font-size: 20px;
+     }
+     .slide {
+        font-size: 14px;
+     }
+     #demo {
+        top: 37%;
+        left: 6%;
+        width: 20px;
+        height: 20px;
+     }
+}
+@media only screen and (min-width: 410px) and (max-width: 460px) {
+     .prev, .next {
+        font-size: 18px;
+     }
+     .slide {
+        font-size: 13px;
+     }
+     #demo {
+        top: 32%;
+        left: 6%;
+        width: 18px;
+        height: 18px;
+     }
+}
+@media only screen and (min-width: 360px) and (max-width: 410px) {
+     .prev, .next {
+        font-size: 16px;
+     }
+     .slide {
+        font-size: 11px;
+     }
+     #demo {
+        top: 29%;
+        left: 6%;
+        width: 16px;
+        height: 16px;
+     }
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+     .prev, .next {
+        font-size: 14px;
+     }
+     .slide {
+        font-size: 10px;
+     }
+     #demo {
+        top: 27%;
+        left: 6%;
+        width: 15px;
+        height: 15px;
+     }
+}
