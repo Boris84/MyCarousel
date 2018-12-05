@@ -38,6 +38,16 @@ body {
   user-select: none;
 }
 
+.play {
+  color: blue;
+  
+}
+
+.pause {
+  color: green;
+
+}
+
 .next {
   right: 0;
 }
@@ -75,11 +85,10 @@ body {
 #demo {
    top: 87%;
    left: 3%;
-   position: absolute;
    width: 30px;
    height: 30px;
-   background-color: black;
-
+   position: absolute;
+   background-color: white;
 }
 
 

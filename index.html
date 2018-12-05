@@ -31,38 +31,9 @@
 <a class="next" onclick="plusSlides(1)">&#10095;</a>;
 
 <!-- play/pause button -->
-<button id="demo"></button>
+<input type="button" id="demo" onclick="playpause()"></input>
 </div>
-  
 
-
-
-
-
-
-
-<!-- 
-  var pictures = document.getElementById("pic");
-  var btn = document.getElementById("demo");
-   /* btn.style.background = "url(play.png) no-repeat";
-
-  /*function play(){
-    if(pictures.paused){
-        pictures.play();
-        btn.style.background = "url(resources/images/play.png) no-repeat";
-    }
-    else {
-        pictures.pause();
-        btn.style.background = "url(resources/images/pause.png) no-repeat";
-        btn.style.color="green";
-    }
-  }
-
-
-
-
-
- -->
 
 
 
@@ -91,9 +62,21 @@ function showSlides(n) {
   }
     slides[slideIndex-1].style.display = "block"; 
 }
+
+ var button = document.getElementById('demo');
+ 
+ function playPause(button) {
+   button.target.classList.toggle('.play', '.pause');
+     if (button.style.display === '.play') {
+          button.classList.remove('.pause');
+   } else {
+       button.classList.add('.play');
+   }
+}
+   button.addEventListener('click', playPause);
+
+
 </script>
-
-
 
 </body>
 </html>
