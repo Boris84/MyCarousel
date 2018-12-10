@@ -2,11 +2,11 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 <title>My Carousel</title>
 </head>
 <body> 
-
 <!-- carousel container -->
 <div class="carousel-container">
 
@@ -24,6 +24,7 @@
 <div class="image fader">
 <div class="slide">3 / 3</div>
 <img src="resources/images/javascript.jpg"/>
+
 </div>
 
 <!-- next and prev pointers -->
@@ -31,7 +32,8 @@
 <a class="next" onclick="plusSlides(1)">&#10095;</a>;
 
 <!-- play/pause button -->
-<input type="button" id="demo" onclick="playpause()"></input>
+<input type="button" class='play' id="demo"></input>
+
 </div>
 
 
@@ -41,6 +43,7 @@
 <script>
   var slideIndex = 1;
 showSlides(slideIndex);
+setTimeout(function(){ console.log("Hello"); }, 3000);
 
 // next / prev controls
 function plusSlides(n) {
@@ -52,9 +55,20 @@ function currentSlide(n) {
   showSlides(slideIndex = n);	
 }
 
+
+  var slideIndex = 0;
+  onclick(showSlides);
+  function autoSlides() {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    
+}
+
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("image");
+  console.log(slides)
    if (n > slides.length) {slideIndex = 1} 
    if (n < 1) {slideIndex = slides.length}
    for (i = 0; i < slides.length; i++) {
@@ -65,15 +79,16 @@ function showSlides(n) {
 
  var button = document.getElementById('demo');
  
- function playPause(button) {
-   button.target.classList.toggle('.play', '.pause');
-     if (button.style.display === '.play') {
-          button.classList.remove('.pause');
-   } else {
-       button.classList.add('.play');
-   }
+ function playPause() { 
+  console.log(button.style.display);
+   button.classList.toggle('play');
+   button.classList.toggle('pause');
+
+  if (button.classList.contains("play")) {
+    showSlides(3)
+  }
 }
-   button.addEventListener('click', playPause);
+  button.addEventListener('click', autoSlides);
 
 
 </script>
