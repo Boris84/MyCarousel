@@ -28,70 +28,15 @@
 </div>
 
 <!-- next and prev pointers -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>;
-<a class="next" onclick="plusSlides(1)">&#10095;</a>;
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 <!-- play/pause button -->
-<input type="button" class='play' id="demo"></input>
-
+<div class="button" id="play" onclick="playPause()"></div>
 </div>
 
 
 
-
-<!-- javaScirpt -->
-<script>
-  var slideIndex = 1;
-showSlides(slideIndex);
-setTimeout(function(){ console.log("Hello"); }, 3000);
-
-// next / prev controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// image function call 
-function currentSlide(n) {
-  showSlides(slideIndex = n);	
-}
-
-
-  var slideIndex = 0;
-  onclick(showSlides);
-  function autoSlides() {
-    var i;
-    var slides = document.getElementsByClassName("image");
-    
-}
-
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("image");
-  console.log(slides)
-   if (n > slides.length) {slideIndex = 1} 
-   if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-    slides[slideIndex-1].style.display = "block"; 
-}
-
- var button = document.getElementById('demo');
- 
- function playPause() { 
-  console.log(button.style.display);
-   button.classList.toggle('play');
-   button.classList.toggle('pause');
-
-  if (button.classList.contains("play")) {
-    showSlides(3)
-  }
-}
-  button.addEventListener('click', autoSlides);
-
-
-</script>
-
+<script type="text/javascript" src="resources/js/main.js"></script>
 </body>
 </html>
