@@ -20,9 +20,7 @@ function currentSlide(n) {
   function autoSlides() {
     var i;
     var slides = document.getElementsByClassName("image");
-    
 }
-
 
 function showSlides(n) {
   var i;
@@ -35,34 +33,8 @@ function showSlides(n) {
   }
     slides[slideIndex-1].style.display = "block"; 
 }
-
  var button = document.getElementById('demo');
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  function playPause() { 
    var element = document.getElementById("play");
      element.classList.toggle('imgPause');
@@ -70,6 +42,9 @@ function showSlides(n) {
    
     if (element == 'imgPlay') {
       element.classList.remove('imgPause')
+      while(element === 'imgPlay') {
+        
+      }
     }
     else {
       element.classList.add('imgPlay');
