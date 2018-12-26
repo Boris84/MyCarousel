@@ -42,7 +42,7 @@ body {
   user-select: none;
 }
 
-.imgPlay {
+.playB {
   width: 24px;
   height: 18px;
   border-width: 17px;
@@ -56,7 +56,7 @@ body {
   border-color: transparent transparent transparent #fff;
 }
 
-.imgPause {
+.pauseB {
   width: 24px;
   height: 19px;
   border-width: 17px;
