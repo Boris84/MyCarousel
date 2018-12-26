@@ -2,7 +2,7 @@
 
 var slideIndex = 1;
 showSlides(slideIndex);
-setTimeout(function(){ console.log("Hello"); }, 3000);
+
 
 // next / prev controls
 function plusSlides(n) {
@@ -13,14 +13,13 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);	
 }
-
-  var slideIndex = 0;
     
-  function autoSlides() {
-    var i;
+function autoSlides() {
+    var x;
     var slides = document.getElementsByClassName("image");
 }
 
+  var slideIndex = 0;
 
 
 function showSlides(n) {
@@ -28,56 +27,65 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("image");
    if (n > slides.length) {slideIndex = 1} 
    if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+   }
     slides[slideIndex-1].style.display = "block"; 
+
 }
 
-
-
-var button = document.getElementById('demo');
 
 function playPause() { 
   var element = document.getElementById("play");
     element.classList.toggle('imgPause');
     document.querySelector('#element');
-   
-    if (element == 'imgPlay') {
-      element.classList.remove('imgPause')
-      while(element === 'imgPlay') {
-      
-      }
+
+    if (element === 'imgPlay') {
+      element.classList.remove('imgPause');
     }
     else {
-      element.classList.add('imgPlay');
+        element.classList.add('imgPlay');
+    }  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("play").onclick = function () {
+  var slides = document.getElementsByClassName("image");
+  var slideIndex = 0;
+  var i;
+  
+function autoPlay(n) {
+   
+   if (n < 1) {
+     slideIndex = slides.length;
+   }
+
+     for (i = 0; i < slides.length; i+=1) {
+        slides[i].style.display = "block"; 
     }
+          plusSlides(1);
+      
 }
 
+         window.setInterval(autoPlay, 900);
 
 
-/*var slideindex = 0;
-var timer;
-var i;
+ };
 
-function autoPlay() {
-  var x = document.getElementsByClassName('image');
-  
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = 'none';
-    slideIndex++;
-  }
-  
-  if (slideIndex > x.length -1; i++) {
-    slideIndex = 1;
-  } 
-  else {
-    i = 0;
-}
-  x[slideIndex-1].style.display = 'block';
-  timer = setInterval("autoPlay()", 500);
-}
-*/
+
+
+
 
 
 
@@ -85,5 +93,4 @@ function autoPlay() {
  
 
 
- // button.addEventListener('click', playPause());
 

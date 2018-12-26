@@ -100,7 +100,6 @@ body {
   to {opacity: 2}
 }
 
-
 .button {
    top: 87%;
    left: 3%;
@@ -108,7 +107,6 @@ body {
    height: 20px;
    position: absolute;
 }
-
 
 
 /* media queries */
