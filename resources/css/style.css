@@ -100,7 +100,7 @@ body {
   to {opacity: 2}
 }
 
-.button {
+#play {
    top: 87%;
    left: 3%;
    width: 25px;
