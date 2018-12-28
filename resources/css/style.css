@@ -108,6 +108,12 @@ body {
    position: absolute;
 }
 
+#play:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 4px black;
+  transition: all 250ms ease-out;
+}
+
 
 /* media queries */
  /* tablet 940px - 870px */ 
