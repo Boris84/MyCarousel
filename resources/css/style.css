@@ -175,7 +175,7 @@ body {
 
 /* #demo  - 980px */
 @media only screen and (min-width: 950px) and (max-width: 980px) {
-     .button {
+     #play {
    	   top: 84%;
        left: 4%;
        width: 25px;
@@ -183,7 +183,7 @@ body {
      }
 }
 @media only screen and (min-width: 920px) and (max-width: 950px) {
-     .button {
+     #play {
    	   top: 80%;
        left: 4%;
        width: 20px;
@@ -191,7 +191,7 @@ body {
      }
 }
  @media only screen and (min-width: 870px) and (max-width: 920px) {
-     .button {
+     #play {
        top: 76%;
        left: 5%;
        width: 20px;
@@ -199,7 +199,7 @@ body {
      }
  }
   @media only screen and (min-width: 840px) and (max-width: 870px) {
-     .button {
+     #play {
        top: 72%;
        left: 5%;
        width: 20px;
@@ -207,7 +207,7 @@ body {
      }
  }
  @media only screen and (min-width: 800px) and (max-width: 840px) {
-     .button {
+     #play {
        top: 68%;
        left: 5%;
        width: 20px;
@@ -216,13 +216,13 @@ body {
      .slide {
        font-size: 18px;
      }
-     .imgPlay {
+     .playB {
         height: 17px;
         border-width: 17px;
         border-width: 10px 0px 10px 20px;
         border-width: 10px 17px 10px 15px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 16px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -230,7 +230,7 @@ body {
      }
  }
  @media only screen and (min-width: 760px) and (max-width: 800px) {
-     .button {
+     #play {
         top: 64%;
         left: 5%;
         width: 20px;
@@ -239,13 +239,13 @@ body {
      .slide {
         font-size: 18px;
      }
-     .imgPlay {
+     .playB {
         height: 17px;
         border-width: 17px;
         border-width: 10px 0px 10px 20px;
         border-width: 9px 17px 9px 15px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 16px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -259,19 +259,19 @@ body {
      .slide {
         font-size: 18px;
      }
-     .button {
+     #play {
         top: 62%;
         left: 5%;
         width: 20px;
         height: 20px;
      }
-      .imgPlay {
+     .playB {
         height: 17px;
         border-width: 17px;
         border-width: 10px 0px 10px 20px;
         border-width: 9px 17px 9px 15px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 16px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -285,19 +285,19 @@ body {
      .slide {
         font-size: 18px;
      }
-     .button {
+     #play {
         top: 60%;
         left: 5%;
         width: 20px;
         height: 18px;
      }
-     .imgPlay {
+     .playB {
         height: 16px;
         border-width: 17px;
         border-width: 10px 0px 10px 20px;
         border-width: 9px 17px 9px 15px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 16px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -311,19 +311,19 @@ body {
      .slide {
         font-size: 16px;
      }
-     .button {
+     #play {
         top: 54%;
         left: 6%;
         width: 20px;
         height: 18px;
      }
-      .imgPlay {
+     .playB {
         height: 15px;
         border-width: 17px;
         border-width: 10px 0px 10px 20px;
         border-width: 9px 17px 9px 15px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 16px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -338,19 +338,19 @@ body {
      .slide {
         font-size: 15px;
      }
-     .button {
+     #play {
         top: 45%;
         left: 6%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 17px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 9px 17px 9px 15px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 15px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -365,19 +365,19 @@ body {
      .slide {
         font-size: 14px;
      }
-     .button {
+     #play {
         top: 45%;
         left: 6%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 15px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 7px 17px 7px 12px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 14px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -392,19 +392,19 @@ body {
      .slide {
         font-size: 13px;
      }
-     .button {
+     #play {
         top: 45%;
         left: 6%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 15px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 7px 17px 7px 12px;
      }
-     .imgPause {  
+      .pauseB {  
         height: 14px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -418,19 +418,19 @@ body {
      .slide {
         font-size: 13px;
      }
-     .button {
+     #play {
         top: 45%;
         left: 6%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 13px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 6px 17px 6px 12px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 13px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -444,19 +444,19 @@ body {
      .slide {
         font-size: 13px;
      }
-     .button {
+     #play {
         top: 40%;
         left: 6%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 13px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 6px 17px 6px 12px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 13px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -470,19 +470,19 @@ body {
      .slide {
         font-size: 12px;
      }
-     .button {
+     #play {
         top: 35%;
         left: 6%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 13px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 6px 17px 6px 12px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 12px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -499,19 +499,19 @@ body {
      .slide {
         font-size: 11px;
      }
-     .button {
+     #play {
         top: 30%;
         left: 7%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 11px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 6px 17px 6px 11px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 11px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -528,19 +528,19 @@ body {
      .slide {
         font-size: 10px;
      }
-     .button {
+     #play {
         top: 25%;
         left: 7%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 10px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 5px 17px 5px 8px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 10px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -557,19 +557,19 @@ body {
      .slide {
         font-size: 9px;
      }
-     .button {
+     #play {
         top: 23%;
         left: 8%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+    .playB {
         height: 10px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 5px 17px 5px 9px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 10px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -577,7 +577,7 @@ body {
      }
 }
 @media only screen and (min-width: 260px) and (max-width: 290px) {
-      .prev, .next {
+     .prev, .next {
         font-size: 12px;
         margin-top: -357px;
      }
@@ -587,19 +587,19 @@ body {
      .slide {
         font-size: 9px;
      }
-     .button {
+     #play {
         top: 20%;
         left: 9%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 10px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 5px 17px 5px 9px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 9px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;
@@ -617,19 +617,19 @@ body {
      .slide {
         font-size: 8px;
      }
-     .button {
+     #play {
         top: 17%;
         left: 9%;
         width: 17px;
         height: 17px;
      }
-      .imgPlay {
+     .playB {
         height: 8px;
         border-width: 17px;
         border-width: 8px 0px 8px 20px;
         border-width: 4px 17px 4px 7px;
      }
-     .imgPause {  
+     .pauseB {  
         height: 7px;
         border-width: 17px;
         border-width: 0px 17px 0px 17px;

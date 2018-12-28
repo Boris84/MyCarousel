@@ -80,10 +80,7 @@ function pauseSlideShow(n) {
     clearInterval(myTimer);
     playing = false;
   }
-  if (playing == false) {
-    document.getElementById("play").onclick = autoPlay;
-    window.setInterval(autoPlay, 3000);
-  }
+  
 }
 
 };
